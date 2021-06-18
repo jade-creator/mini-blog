@@ -1,0 +1,8 @@
+input[type="file"] {
+    display: none;
+}
+
+[x-cloak] {
+    visibility: hidden !important;
+    overflow: hidden !important;
+}
