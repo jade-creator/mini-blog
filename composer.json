@@ -12,6 +12,7 @@
         "laravel/framework": "^8.40",
         "laravel/tinker": "^2.5",
         "laravel/ui": "^3.3",
+        "ext-gd": "*",
         "spatie/laravel-medialibrary": "^9.0.0"
     },
     "require-dev": {
