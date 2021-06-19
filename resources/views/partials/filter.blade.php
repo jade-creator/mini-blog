@@ -23,7 +23,7 @@
                             <svg class="w-5 h-5 ml-2 -mr-1" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
                         </button>
                     </span>
-                    <div x-cloak :class="{'opacity-1 visible translate-y-0 scale-100': open, 'opacity-0 invisible': ! open}" class="dropdown-menu transition-all duration-300 transform origin-top-right -translate-y-2 scale-95">
+                    <div x-cloak :class="{'opacity-100 visible translate-y-0 scale-100': open, 'opacity-0 invisible': ! open}" class="dropdown-menu transition-all duration-300 transform origin-top-right -translate-y-2 scale-95">
                         <div class="max-h-80 overflow-y-auto absolute right-0 w-56 mt-2 origin-top-right bg-white border border-gray-200 divide-y divide-gray-100 rounded-md shadow-lg outline-none" aria-labelledby="headlessui-menu-button-1" id="headlessui-menu-items-117" role="menu">
                             <div class="py-1">
                                 @forelse ($categories as $category)
@@ -46,7 +46,7 @@
                             <svg class="w-5 h-5 ml-2 -mr-1" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
                         </button>
                     </span>
-                    <div x-cloak :class="{'opacity-1 visible translate-y-0 scale-100': open, 'opacity-0 invisible': ! open}" class="dropdown-menu transition-all duration-300 transform origin-top-right -translate-y-2 scale-95">
+                    <div x-cloak :class="{'opacity-100 visible translate-y-0 scale-100': open, 'opacity-0 invisible': ! open}" class="dropdown-menu transition-all duration-300 transform origin-top-right -translate-y-2 scale-95">
                         <div class="max-h-80 overflow-y-auto absolute right-0 w-56 mt-2 origin-top-right bg-white border border-gray-200 divide-y divide-gray-100 rounded-md shadow-lg outline-none" aria-labelledby="headlessui-menu-button-1" id="headlessui-menu-items-117" role="menu">
                             <div class="py-1">
                                 @forelse ($tags as $tag)
