@@ -3,12 +3,6 @@
 @section('content')
     <div class="container mt-5 px-5 mx-auto lg:px-32">
         <div class="flex flex-col w-full mb-2 text-left ">
-            @if ($article->getFirstMediaUrl('main_images', 'thumb'))
-                <div class="bg-gray-200 p-5 rounded-lg">
-                    <img class="rounded-xl mx-auto max-h-96" src="{{ $article->getFirstMediaUrl('main_images', 'main') }}" alt="Article Image">
-                </div>
-            @endif
-
             <h1 class="my-2 text-3xl font-black tracking-tightertext-black lg:text-7xl md:text-4xl"> 
                 {{ $article->title ?? 'N/A' }}
             </h1>

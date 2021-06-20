@@ -17,11 +17,7 @@
                                         <a href="{{ route('articles.show', ['article' => $article]) }}">
                                             <div class="flex flex-col items-center pb-10 mb-10 rounded-lg border border-gray-200 hover:bg-white p-5 sm:flex-row hover:shadow-lg">
                                                 <div class="inline-flex items-center justify-center flex-shrink-0 text-black rounded-full bg-blueGray-50 sm:mr-10">
-                                                    @if ($article->getFirstMediaUrl('main_images', 'thumb'))
-                                                        <img class="rounded-xl" src="{{ $article->getFirstMediaUrl('main_images', 'thumb') }}" alt="Article Image" style="height:200px; width: 200px;">
-                                                    @else
-                                                        <img src="https://img.icons8.com/plasticine/2x/image.png" alt="No image" style="width: 200px;" title="No image">
-                                                    @endif
+                                                    <img src="https://img.icons8.com/plasticine/2x/image.png" alt="Can't display image as of the moment" style="width: 200px;" title="No image">
                                                 </div>
                                                 <div class="mt-2 md:mt-0 flex-grow text-center sm:text-left">
                                                     <h2 class="mb-8 text-2xl lg:text-4xl font-semibold leading-none tracking-tighter text-black title-font">{{ Illuminate\Support\Str::of($article->title)->words(10, ' ...') ?? 'N/A'}}</h2>
@@ -38,7 +34,7 @@
                                 </div>
                                 @endforelse                        
                             </div>
-                            {{ $articles->appends(request()->except('page'))->links() }}
+                            {{ $articles->appends(request()->except('page'))->links('vendor.pagination.simple-tailwind') }}
                         </div>
                     </div>
                 </div>

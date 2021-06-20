@@ -9,6 +9,8 @@ module.exports = {
       './resources/views/layouts/app.blade.php',
       './resources/views/partials/filter.blade.php',
       './resources/views/partials/sidebar.blade.php',
+      './resources/views/vendor/pagination/simple-tailwind.blade.php',
+      './resources/views/vendor/pagination/tailwind.blade.php',
     ],
     safelist: [
       'opacity-100',

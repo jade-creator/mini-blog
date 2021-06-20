@@ -11,6 +11,9 @@
 
     <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}" defer></script>
+
+    <!-- app icon -->
+    <link rel="icon" href="https://drive.google.com/uc?id=1PYBlvh70Dg-uYEWlYbDEPyoCRic4oej_">
     
     <!-- Styles -->
     <link href="{{ mix('css/app.css') }}" rel="stylesheet">
